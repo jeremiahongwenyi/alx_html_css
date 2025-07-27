@@ -114,6 +114,7 @@ nav ul {
    blockquote{
      margin-bottom: 12px;
      font-size: 18px;
+     max-width: 80%;
    }
 
   h3 {
