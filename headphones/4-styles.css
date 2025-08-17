@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+header{
+    padding: 24px 14% 120px 14%;
+    background-image: url(assets/images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-position: center; */  
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 270px;
+}
+
+.logo{
+       width: 150px;
+       height: auto;
+    }
+
+.nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.nav-list li {
+
+    
+}
+
+.link{
+ text-decoration: none;
+    color: #fff;
+}
+a:link{
+   
+}
+
+a:visited{
+
+}
+a:hover{
+color: #FF6565;
+}
+a:active{
+
+}
+
+.hero-1 {
+  text-align: center;
+}
+
+  .hero-1 .title{
+    margin-bottom: 32px;
+  }
+
+   .action{
+    margin-bottom: 48px;
+    padding: 10px 12px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ff6563;
+    color: #fff;
+  }
+
+  .hero-1 .action:hover {
+opacity: 0.9
+  }
+  .hero-1 .content{
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+
+  .mandate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+.icon {
+  font-family: 'holberton_school-icon'; /* comes from style.css */
+  font-size: 48px;     /* make it bigger */
+  color: #FF6565;      /* change color */
+  display: inline-block;
+  margin-bottom: 12px; /* spacing under the icon */
+  text-align: center;
+}
+
+.content{
+    max-width: 60%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.items-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   
+}
+
+.item{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.results{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+   padding-top: 64px;
+   padding-bottom: 32px;
+    color: #fff;
+    background-image: url(assets/images/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+}
+
+.results-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 64px;
+}
+
+.item-image{
+  width: 150px;
+}
+
+.contact{
+display: flex;
+flex-direction: column;
+gap: 32px;
+justify-content: center;
+align-items: center;
+}
+
+.form{
+    width: 400px;
+}
+
+label{
+    font-weight: bold;
+}
+input{
+border-top: none;
+border-left: none;
+border-right: none;
+}
+
+.form-group{
+display: flex;
+flex-direction: column;
+gap: 4px;
+margin-bottom: 16px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+footer{
+  background-color: black;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 150px;
+}
+.socials svg {
+fill: #fff;
+width: 25px;
+height: 25px;
+margin-right: 8px;
+}
+
+
+
+  @media(max-width: 900px){
+ .items-container, .results-container{
+        grid-template-columns: repeat(2,1fr);
+        gap:48px
+    }
+
+
+  }
+  
+  @media (max-width: 480px){
+    header{
+            padding: 24px 14% 120px 5%;
+    }
+    .nav-list{
+        display: none;
+    }
+    .items-container, .results-container{
+        grid-template-columns: 1fr
+    }
+    .form{
+    width: 200px;
+}
+footer{display: block;}
+  }
+
+
+
+
+
+
+
+/* header{
+    background-image: url(assets/images/headphones_hero_1.jpg);
+} */
